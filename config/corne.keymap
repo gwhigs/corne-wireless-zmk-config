@@ -11,10 +11,14 @@
 / {
         macros {
                 hyphen_arrow: hyphen_arrow {
-                        bindings = <&kp MINUS &kp GT>;
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&macro_tap &kp MINUS &kp GT>;
                 };
                 eq_arrow: eq_arrow {
-                        bindings = <&kp EQUAL &kp GT>;
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&macro_tap &kp EQUAL &kp GT>;
                 };
         };
 
