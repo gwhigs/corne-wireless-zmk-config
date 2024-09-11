@@ -56,14 +56,14 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  7  |  8  |  9  |  %  |   |  ^  |  &  |  (  |  )  |  *  | BKSP |
-// | CTRL |  @  |  4  |  5  |  6  |  $  |   |  -  |  =  |  {  |  }  | "|" |  ->  |
+// |  TAB |  !  |  7  |  8  |  9  |  %  |   |  ^  |  &  |  {  |  }  |  *  | BKSP |
+// | CTRL |  @  |  4  |  5  |  6  |  $  |   |  -  |  =  |  (  |  ) | "|" |  ->  |
 // | SHFT |  #  |  1  |  2  |  3  |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   |
 //                    | GUI |  0  | ALT |   | ENT |     | ALT |
 //                        display-name = "Raise";
                         bindings = <
-   &kp  TAB  &kp EXCL &kp N7 &kp N8 &kp N9 &kp PRCNT   &kp CARET &kp AMPS  &kp LPAR &kp RPAR &kp KP_MULTIPLY &kp BSPC
-   &kp LCTRL &kp AT   &kp N4 &kp N5 &kp N6 &kp DLLR    &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp PIPE        &hyphen_arrow
+   &kp  TAB  &kp EXCL &kp N7 &kp N8 &kp N9 &kp PRCNT   &kp CARET &kp AMPS  &kp LBRC &kp RBRC &kp KP_MULTIPLY &kp BSPC
+   &kp LCTRL &kp AT   &kp N4 &kp N5 &kp N6 &kp DLLR    &kp MINUS &kp EQUAL &kp LPAR &kp RPAR &kp PIPE        &hyphen_arrow
    &kp LSHFT &kp HASH &kp N1 &kp N2 &kp N3 &trans      &kp UNDER &kp PLUS  &kp LBKT &kp RBKT &kp BSLH        &kp TILDE
                     	     &kp LGUI &kp N0  &kp LALT    &kp RET   &trans    &kp RALT
                         >;
