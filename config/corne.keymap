@@ -130,20 +130,22 @@ MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
     )
 
 // tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
-SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
-SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
+// UNUSED
+//SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
+//SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
 
 // tap: dot | shift + tap: colon | ctrl + shift + tap: >
-SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
-SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
+// UNUSED
+//SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
+//SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 
 // tap: qmark | shift + tap: excl
 // UNUSED
 //SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
-// tap: left/right parenthesis | shft + tap: less-than/greater-than
-SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
-SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
+// tap: left/right parenthesis | shft + tap: braces
+SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LBRC)
+SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp RBRC)
 
 // tap: space | shift + tap: dot -> space -> sticky shift | hold: activate layer
 ZMK_HOLD_TAP(lt_spc,
