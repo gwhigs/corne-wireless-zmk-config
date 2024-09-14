@@ -1,0 +1,6 @@
+.idea
+.west
+modules
+zephyr
+zmk
+zmk-helpers
