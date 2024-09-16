@@ -16,7 +16,7 @@
 #define X_RT &kp BSPC  // Top
 #define X_RM &kp SQT   // Middle
 #define X_RB &kp ESC   // Bottom
-#define X_RH &kp LSHFT // Thumb
+#define X_RH &kp LALT // Thumb
 
 /* between left and right half */
 #if !defined X_MT  // top row, middle
