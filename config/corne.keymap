@@ -41,6 +41,9 @@
 #define N_TAB &kp LC(TAB)
 #define P_TAB &kp LS(LC(TAB))
 
+/* Enable wireless */
+#define CONFIG_WIRELESS
+
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
