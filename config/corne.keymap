@@ -150,12 +150,12 @@ MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
 SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LBRC)
 SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp RBRC)
 
-// tap: space | shift + tap: dot -> space -> sticky shift | hold: activate layer
+// tap: space | hold: activate layer
 ZMK_HOLD_TAP(lt_spc,
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&kp SPACE>;
+    bindings = <&mo>, <&kp>;
 )
 
 ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS)  // FN + NUM --> SYS
@@ -168,7 +168,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────┤ ├──────┤
     X_LB     &kp Z         &kp X         &kp C         &kp V         &kp B           X_MB     &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴─────────────────────────────╯ ├──────┤
-    X_LH                                               &mo NAV       &lt_spc FN 0    X_MH     &kp RET       &mo NUM                                                     X_RH
+    X_LH                                               &mo NAV       &lt_spc FN SPACE X_MH    &kp RET       &mo NUM                                                     X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                             ╰──────╯
 )
 
